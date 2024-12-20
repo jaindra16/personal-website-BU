@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang = en>
+    <head>
+        <meta charset = "utf-8">
+        <title>METCS601TermProject</title>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link rel = "shortcut icon" href = "https://i1.sndcdn.com/artworks-000140162979-8n10yf-t500x500.jpg" type = image/x-icon >
+        <link rel = "icon" href = "https://i1.sndcdn.com/artworks-000140162979-8n10yf-t500x500.jpg" type = image/x-icon>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <script type="module" defer src="main.js"></script>
+        <script defer src="tablecontent.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    
+    </head>
+    <body>
+        <div class = "firstbackimage">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href = "#home">HOME</a></li>
+                        <li><a href = "#resume">RESUME</a></li>
+                        <li><a href = "#interests">INTERESTS</a></li>
+                        <li><a href = "#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="home"></div>
+            <div class = "starwars">
+                <h1>At current time in the very same galaxy....</h1>
+                <p id = "pcolor">there exists</p>
+                <p id = "namep">JAINDRA<br>PARVATHANENI</p>
+            </div>
+            <div class="currentpos">
+                STUDENT AT :
+                <div>
+                    <img src = "bulogo.png" alt = "logo" width="100px" height="50px">
+                </div>
+            </div>
+        </div>
+
+            <div class="secondbackimgrepeat">
+                <section class="currentpos">
+                    <h6>ABOUT ME : </h6>
+                    <h5> I AM FROM HYDERABAD, INDIA, </h5>
+                    <h4> CURRENTLY STUDYING MASTERS IN COMPUTER SCIENCE FROM </h4>
+                    <h4> BOSTON UNIVERSITY </h4>
+                    <h3> THIS IS A WEBPAGE I MADE AS A TERM PROJECT FOR THE COURSE </h3>
+                    <h2> MET CS 601 UNDER ANDREW SHEEHAN </h2>
+                    <h1> SCROLL THROUGH FOR THE REST OF THE WEBSITE...... </h1>
+
+                </section>
+                <div id="bebopgifdiv">
+                    <img src = "bebopgif.gif" alt="bpgif" id="we">
+                </div>
+                <div class="algn1">
+                    <div id="fun-content"> </div>
+                </div>
+
+
+            <!------------------------------ RESUME TAB ---------------------------------------------------------------------->
+
+                <div id="resume"></div>
+
+                <div>
+                    <h1 id = "reshdr" class="algn1">RESUME</h1>
+                </div>
+
+                <div class="restabs">
+                    <p class="restablink currentsel" data-tab="education">Education</p>
+                    <p class="restablink" data-tab="experience">Experience / Certifications</p>
+                    <p class="restablink" data-tab="projects">Projects</p>
+                    <p class="restablink" data-tab="skills">Skills</p>
+
+                </div>
+                <section class="algn2">
+                    <div class="tabcontent currenttab" id="education">
+                        <ul>
+                            <li><span>Boston University</span><br> Masters in Computer Science (2023-2024)</li>
+                            <li><span>B.V. Raju Institute of Technology</span><br> B.Tech in Computer Science and Engineering (2019-2023)<br>cgpa: 7.68</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tabcontent" id="experience">
+                        <ul>
+                            <li><span>Programming for Everybody (Getting Started with Python)</span><br>an online non-credit course authorized by University of Michigan and offered through Coursera </li>
+                            <li><span>Machine Learning Foundations: A Case Study Approach</span><br>a MOOC from the University of Washington and offered through Coursera<br></li>
+                            <li><span>C for Everyone: Programming Fundamentals</span><br>an online non-credit course authorized by University of California, Santa Cruz and offered through Coursera</li>
+                            <li><span>Python Data Structures</span><br>an online non-credit course authorized by University of Michigan and offered through Coursera</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tabcontent" id="projects">
+                        <ul>
+                            <li><span>Cardio Inspect using Ensemble Learning (B.Tech Major project, Group)</span><br>A project to improve the accuracy of Heart disease prediction</li>
+                            <li><span>Music Genre Recognition using machine learning (B.Tech Technical Term Paper, Group)</span><br>Technical Term paper on ML</li>
+                            <li><span>Career Trajectory (B.Tech Minor project, Group)</span><br>A website built using HTML,CSS and PHP</li>
+
+                    </div>
+
+                    <div class="tabcontent" id="skills">
+                        <ul>
+                            <li><span>SQL</span><br></li>
+                            <li><span>Python</span><br></li>
+                            <li><span>Java</span><br></li>
+                            <li><span>Front End Development</span><br></li>
+                            <li><span>Data Analytics with R</span></li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                
+            <!----------------------------------- INTERESTS TAB ------------------------------------------------------------------------------------------------------------------>
+
+                <div id="interests"></div>
+
+                <div>
+                    <h1 id = "inthdr" class="algn1">INTERESTS</h1>
+                </div>
+                <div class="intimgs">
+
+                    <div class="int">
+                        <img src="images/music.JPG" height="200" width="200" id="music">
+                        <h3>MUSIC :</h3>
+                        <p>Click the image to view my Spotify profile</p>
+                    </div>
+
+                    <div class="int">
+                        <img src="images/sekiro.PNG" height="200" width="200" id="games">
+                        <h3>GAMING :</h3>
+                        <p>Click the image to explore gaming</p>
+                        <p>PS: jaindra16</p>
+                        <p>xbox: jaindra16</p>
+                        <div id="gamenme"></div>
+                    </div>
+
+                    <div class="int">
+                        <img src="images/messi.JPG" height="200" width="200" id="messi">
+                        <h3>FOOTBALL (Barça / Messi) :</h3>
+                        <p>Click the image to view FC Barcelona's next match</p>
+                    </div>
+
+                    <div class="int">
+                        <img src="images/anime.JPG" height="200" width="200" id="anime">
+                        <h3>ANIME / MANGA :</h3>
+                        <p>Click the image to view my MAL profile</p>
+                    </div>
+
+                    <div class="int">
+                        <img src="images/movies.jpeg" height="200" width="200" id="movies">
+                        <h3>CINEMA :</h3>
+                        <p>Click the image to explore cinema or:</p>
+                        <div id="movienme"></div>
+                    </div>
+                    
+
+                </div>
+
+        
+            <!--------------- CONTACT TAB---------------------------------------------------------------------------------->
+
+
+                <div id="contact"></div>
+
+                <div>
+                    <h1 id = "conthdr" class="algn1">CONTACT</h1>
+                </div>
+
+                <section class="intimgs">
+
+                    <div class="int">
+                        <img src="images/linkedin-logo-png-2026.png" height="100" width="100" id="linkedin">
+                        <h3>LinkedIn</h3>
+                    </div>
+
+                    <div class="int">
+                        <img src="images/mail.png" height="100" width="100" id="mail">
+                        <h3>GMail :</h3>
+                        <p>jaindra16online@gmail.com</p>
+                    </div>
+
+                    <div class="int">
+                        <img src="images/bumail.png" height="100" width="100" id="bumail">
+                        <h3>Student Mail :</h3>
+                        <p>jaindrap@bu.edu</p>
+                    </div>
+
+                    <div class="int">
+                        <img src="images/instagram-icon-971.jpg" height="100" width="100" id="insta">
+                        <h3>Instagram</h3>
+
+                    </div>
+
+                    <div class="int">
+                        <img src="images/fb.png" height="100" width="100" id="fb">
+                        <h3>Facebook</h3>
+                    </div>
+
+                    <div class="int">
+                        <img src="images/x.png" height="100" width="100" id="x">
+                        <h3>X / Twitter</h3>
+                    </div>
+
+                    <div class="int">
+                        <img src="images/phone.png" height="100" width="100" id="phone">
+                        <h3>Phone : (857) 498 1546</h3>
+                    </div>
+
+                </section>
+                <footer id="footer">
+                    <p>NOVEMBER 2023.</p>
+                </footer>
+
+            </div>
+            
+    </body>
+</html>

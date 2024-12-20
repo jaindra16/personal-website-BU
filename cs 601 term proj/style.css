@@ -1,0 +1,400 @@
+body{
+    color: yellow;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fixedheight{
+    height: 600px;
+}
+.firstbackimage{
+    background-image: url("backgroundimg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 800;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.secondbackimg{
+    background-image: url("spacebackimg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+.secondbackimgrepeat{
+    background-image: url("spacebackimg.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    width: 100vw;
+
+}
+.starwars{
+    text-align: center;
+    color: rgb(123, 181, 228);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+}
+.starwars #pcolor{
+    font-size: 15px;
+}
+.starwars #namep{
+    color: yellow;
+    font-size: 80px;
+    font-family: impact, sans-serif;
+}
+.navbar{
+    padding: 10px 10%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+    overflow: scroll;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+
+}
+nav ul li:active {
+    transform: scale(0.8);
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #042C62;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.currentpos{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#bebopgifdiv{
+    text-align: center;
+}
+
+/* resume */
+#reshdr{
+    margin-top: 100px;
+}
+.algn1{
+    text-align: center;
+}
+#funcontent{
+    font-size: 30px;
+}
+.algn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restabs{
+    display: flex;
+    justify-content: space-around;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.restablink{
+    cursor: pointer;
+    position: relative;
+
+}
+.restablink:hover {
+    color: white;
+  }
+.restablink::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.restablink.currentsel::after{
+    width: 100%;
+}
+.tabcontent ul li {
+    margin: 30px ;
+    color: white;
+}
+.tabcontent ul li span{
+    color: rgb(123, 181, 228);
+    font-size: 20px;
+    
+}
+.tabcontent{
+    display: none;
+}
+.tabcontent.currenttab{
+    display: block;
+}
+
+/* interests */
+#inthdr{
+    margin-top: 120px;
+}
+.intimgs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.int{
+    border: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.int:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+
+}
+/*contact*/
+#conthdr{
+    margin-top: 120px;
+}
+/* Footer */
+footer{
+    text-align: center;
+    padding: 10px;
+    margin-top: 120px;
+}
+footer::before {
+    content: "Copyright © ";
+    font-style: italic;
+  }
+/*extra*/
+p::first-letter {
+    text-transform: uppercase;
+}
+h3::first-letter {
+    text-transform: uppercase;
+}
+a:active{
+    transform: scale(0.80);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+h1 + p{
+    color: rgb(123, 181, 228);;
+}
+h3 +P {
+    color: rgb(123, 181, 228);
+}
+h3 +P+p {
+    color: rgb(123, 181, 228);
+}
+h3 +P+p+p {
+    color: rgb(123, 181, 228);
+}
+p + div{
+    color: #007bff;
+}
+p + div:hover{
+    color: white;
+}
+
+  
+  
+
+
+
+
+/* media queries*/
+
+@media only screen and (max-width: 600px){
+    
+    .firstbackimage{
+        background-image: url(deathstarmobile.png);
+    }
+    .starwars #namep{
+        font-size: 50px;
+    }
+    #we{
+        width: 300px;
+        height: auto;
+    }
+    .int img{
+        width: 80px;
+        height: 80px;
+    }
+    .restabs{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .algn2{
+        font-size: 14px;
+    }
+    .currentpos h6{
+        margin-top: 80px;
+    }
+    h6{
+        font-size: 7px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    h4{
+        font-size: 13px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 21px;
+    }
+    h1{
+        font-size: 29px;
+    }
+
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .starwars #namep{
+        font-size: 50px;
+    }
+    #we{
+        width: 300px;
+        height: auto;
+    }
+    .int img{
+        width: 80px;
+        height: 80px;
+    }
+    .restabs{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .algn2{
+        font-size: 14px;
+    }
+    .currentpos h6{
+        margin-top: 140px;
+    }
+    h6{
+        font-size: 7px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    h4{
+        font-size: 13px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 21px;
+    }
+    h1{
+        font-size: 29px;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .starwars #namep{
+        font-size: 70px;
+    }
+    #we{
+        width: 300px;
+        height: auto;
+    }
+    .int img{
+        width: 80px;
+        height: 80px;
+    }
+    .restabs{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .algn2{
+        font-size: 14px;
+    }
+    .currentpos h6{
+        margin-top: 140px;
+    }
+    h6{
+        font-size: 7px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    h4{
+        font-size: 13px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 21px;
+    }
+    h1{
+        font-size: 29px;
+    }
+}
+
+/*height*/
+@media screen and (max-height: 600px) {
+    .firstbackimage{
+        overflow: auto;
+    }
+}
+
+
